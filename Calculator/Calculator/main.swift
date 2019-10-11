@@ -22,3 +22,12 @@ func mathStuffFactory(opString: String) -> (Double, Double) -> Double {
     return {x, y in x + y }
   }
 }
+
+let closureOperation = mathStuffFactory(opString: "+")
+// returns a single double
+
+
+let result = closureOperation(45,5)
+// to add the values
+
+print("Result of operations is \(result)")
